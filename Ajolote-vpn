@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Ruta al archivo de configuración de OpenVPN
+VPN="/ruta/a/tu/vpn"
+
+# Ruta al archivo de credenciales
+AUTH_FILE="/ruta/a/tu/archivo/de/claves"
+
+# Ejecutar OpenVPN con el archivo de configuración
+sudo openvpn --config "$VPN" --auth-user-pass "$AUTH_FILE"
